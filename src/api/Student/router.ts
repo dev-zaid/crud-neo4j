@@ -44,5 +44,6 @@ const handleDeleteStudent = async (req: Request, res: Response) => {
 
 studentRouter.post('/add', handleAddStudent);
 studentRouter.get('/:id', handleGetStudent);
+studentRouter.delete('/:id', handleDeleteStudent);
 
 export default studentRouter;
